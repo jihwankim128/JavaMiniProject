@@ -22,6 +22,19 @@ public class Customer {
         this.medicalRecords = new ArrayList<>();
     }
 
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "phoneNumber='" + phoneNumber + '\'' +
+                ", ownerName='" + ownerName + '\'' +
+                ", petName='" + petName + '\'' +
+                ", address='" + address + '\'' +
+                ", species='" + species + '\'' +
+                ", birthYear=" + birthYear +
+                ", medicalRecords=" + medicalRecords +
+                '}';
+    }
+
     public String getPhoneNumber() {
         return phoneNumber;
     }
