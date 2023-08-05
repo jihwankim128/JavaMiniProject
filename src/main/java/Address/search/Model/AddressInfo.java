@@ -1,15 +1,9 @@
-package Address.search.DTO;
+package Address.search.Model;
 
 public class AddressInfo {
     private String address;
     private double latitude;
     private double longitude;
-
-    public AddressInfo(String address, double latitude, double longitude) {
-        this.address = address;
-        this.latitude = latitude;
-        this.longitude = longitude;
-    }
 
     public String getAddress() {
         return address;
@@ -32,6 +26,12 @@ public class AddressInfo {
     }
 
     public void setLongitude(double longitude) {
+        this.longitude = longitude;
+    }
+
+    public AddressInfo(String address, double latitude, double longitude) {
+        this.address = address;
+        this.latitude = latitude;
         this.longitude = longitude;
     }
 }
